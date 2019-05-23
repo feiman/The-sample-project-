@@ -1,0 +1,75 @@
+// resizeicon el-icon-circle-close 已关闭
+// icon-con icon-con-daizhixin 待执行
+// icon-con icon-con-zhixingzhon 执行中
+// resizeicon el-icon-circle-check resCoGreen 已完成
+// icon-con icon-con-yipingjia 已评价
+// icon-con icon-con-daidaishenhe 待审核
+// icon-con icon-con-daishangchuan 待上传素材
+// icon-con icon-con-daizhifu 待支付
+// icon-con .icon-con-bohui 驳回
+// icon-con .icon-con-yishagnjia 已上架
+// icon-off-on-off   断开
+// icon-off-on  连接
+
+
+.icon-con {
+    display: inline-block;
+    background: url('./../../static/img/orderStatus.png') no-repeat;
+    vertical-align: -6px;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.resizeicon {
+    font-size: 22px;
+    vertical-align: -3px;
+    margin-right: 8px;
+}
+
+.resCoGreen {
+    color: #3cc24c;
+}
+
+.icon-con-daizhifu {
+    background-position: -1px -1px;
+}
+
+.icon-con-daishangchuan {
+    background-position: -25px -1px;
+}
+
+.icon-con-daidaishenhe {
+    background-position: -48px -1px;
+}
+
+.icon-con-yipingjia {
+    background-position: -71px -1px;
+}
+
+.icon-con-daizhixin {
+    background-position: -94px -1px;
+}
+
+.icon-con-zhixingzhon {
+    background-position: -117px -1px;
+}
+
+.icon-con-yishagnjia {
+    background-position: -140px -1px;
+}
+
+.icon-con-bohui {
+    background-position: -163px -1px;
+}
+
+.icon-off-on{
+    display: inline-block;
+    background: url('./../../static/img/icons.png') no-repeat;
+    width: 25px;
+    height: 22px;
+}
+
+.icon-off-on-off{
+    background-position-x: -29px;
+}

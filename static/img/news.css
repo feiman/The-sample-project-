@@ -1,0 +1,17 @@
+.icon-news {
+    display: inline-block;
+    background: url('./../imgs/news.jpg') no-repeat;
+    vertical-align: -6px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+.icon-con-success {
+    background-position: -1px 0px;
+}
+.icon-con-shibai {
+    background-position: -54px -1px;
+}
+.icon-con-jingao {
+    background-position: -28px 0px;
+}

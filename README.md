@@ -1,2 +1,10 @@
-# The-sample-project-
-基于vue-cli-2x的实际项目，只有前端代码。请勿star!
+
+# serve with hot reload at localhost:9000
+1. **安装依赖**
+npm install
+2. **启动mock服务**
+npm run mock
+3. **启动dev server**
+npm run dev
+4. **打包build**
+npm run build

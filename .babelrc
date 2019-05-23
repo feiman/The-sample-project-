@@ -1,0 +1,35 @@
+{
+  "presets": [
+    "es2015","stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-vue-jsx",
+    ["import", {
+      "libraryName": "iview",
+      "libraryDirectory": "src/components"
+    }],
+    ["component", {
+      "libraryName": "mint-ui",
+      "style": true }
+    ],
+    ["import", {
+      "libraryName": "vant",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": [
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
+}
+

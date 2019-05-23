@@ -1,0 +1,83 @@
+// util 节目发布 2018-4-9
+
+.ProgramReleased-container{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    ._tabs{
+        border-radius: 4px;
+        width: 300px;
+        height: 24px;
+        line-height: 22px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        ._tabs-center{
+            cursor: pointer;
+            width: 33.3%;
+            border: 1px solid #ddd;
+            &:last-child{
+                border-radius:0 4px 4px 0;
+                margin-left: -1px; 
+            }
+            &:first-child{
+                margin-right: -1px; 
+                border-radius:4px 0 0 4px;
+            }
+        }
+        ._is_tabs_active{
+            border-color:#ff7c4c;
+            background: #ff7c4c;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    
+}
+
+.ProgramReleased{
+    padding:0 20px;
+    overflow: hidden;
+    .program-maright{
+        margin-right:35px; 
+    }
+
+    ._sel_date{
+        min-height: 600px;
+        padding-bottom: 20px;
+    }
+}
+
+.vertical-center-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ivu-modal{
+        top: 0;
+    }
+}
+
+.subrelease{
+    line-height:30px;
+    >p{
+        text-align: center;
+    }
+    .subrelease_left{
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+    }
+    .subrelease_right{
+        color: #8A8A8A;
+    }
+    .subrelease_right_posti{
+        position: relative;
+        left: 31%;
+        top: -30px;
+    }
+}

@@ -1,0 +1,434 @@
+// 在编辑器  
+
+.Program_editorial{
+    padding: 20px 0;
+    overflow: hidden;
+    // 工具栏
+    .editor-toolbar{
+        width: 160px;
+        text-align: center;
+        line-height: 32px;
+        float: left;
+        .editor-toolbar-item{
+            vertical-align: top;
+            i{
+                line-height: 62px;
+                font-size: 60px;
+                color: #888;
+            }
+            &:hover{
+                color: #ff7c4c !important;
+                .icon-editor{
+                    color: #ff7c4c !important;
+                } 
+            }
+        }
+    }
+
+    // 可视区域
+    .editor-view{
+        padding:8px;
+        background: #eee;
+        float: left;
+        .editor-canvas{
+            width: 450px;
+            height: 776px;
+            background: #eee;
+            position: relative;
+            .commont_img{
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size:100%; 
+            }
+        }
+
+        .editor-default-photo{
+            cursor: pointer;
+            margin:0px auto; 
+            // width: calc(100% - 16px);
+            // height: 323px;
+            width: 100%;
+            height: 100%;
+            // line-height: 323px;
+            background: #fff;
+            text-align: center;
+            color: #ccc;
+            position: absolute;
+            z-index: 99;
+        }
+    }
+
+    // 描述
+    .editor-describe{
+        float: left;
+        width: 270px;
+        padding:0 50px; 
+        line-height: 26px;
+        .editor-describe-color-selections{
+            margin: 12px 0;
+            height: 42px;
+            line-height: 42px;
+            width: 100%;
+            border:1px solid #ff7c4c;
+            color: #ff7c4c;
+            border-radius: 4px;
+            padding:0 20px;
+            position: relative;
+            .editoryanse{
+                font-size: 20px;
+                float: right;
+            }
+            .color-picker{
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                .el-color-picker__trigger{
+                    width: 170px;
+                }
+            }
+        }
+        .editor-describe-group{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            text-align: center;
+            margin-top:20px;
+            .editor-describe-group-item{
+                cursor: pointer;
+                vertical-align: middle;
+                padding-top:5px; 
+                line-height: 20px;
+                width: 52px;
+                height: 52px;
+                background: #ddd;
+                color: #777;
+                border-radius: 4px;
+                &:nth-child(2){
+                    margin:0 8px;
+                }
+                .el-loading-mask{
+                    background-color: rgba(255, 255, 255, 0.6);
+                    .circular{
+                        height: 20px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .editor-describe-group-item-bg{
+                background: #ff7c4c;
+                color:#fff;
+                &:hover{
+                    background: #ff9169;
+                }
+            } 
+        }
+    }
+
+    .winSel{
+        border: 2px solid #ff7c4c;
+    }
+  // 图层区域
+  .editor-coverage{
+    float: left;
+    .editor_boxc{
+        width: 160px;
+        height:120px;
+        line-height:120px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 18px;
+        background:#f5f5f5;
+        overflow: hidden;
+        >div{
+            width: 100%;
+            height: 100%;
+            // background-color: #000;
+            -webkit-transition: ease-in 0.5;
+            transition: ease-in 0.5;
+            // &:hover{
+            //     opacity: 0.6;
+            // }
+        }
+        >img{
+            height:100%;
+        }
+        .el-icon-delete{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #000;
+            cursor: pointer;
+            // background: #ff7c4c;
+        }
+    }
+
+}
+
+}
+    // 弹窗
+    .center-modal{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        .ivu-modal{
+            top: 0;
+            width: 854px !important;
+        }
+        .editor-modal-de{
+            // text-align: center;
+            .editor-modal_tab{
+                border-bottom:1px solid #ddd;
+                margin-bottom: 20px;
+                .tabs-items {
+                    padding-bottom: 16px;
+                    width: 92px;
+                    display: inline-block;
+                    text-align: center;
+                }
+                .itemsisActive {
+                    display: block;
+                    width: 92px;
+                    height: 3px;
+                    background: #ff7c4c;
+                    position: relative;
+                    left: 36px;
+                    -webkit-transition: 0.1s;
+                    transition: 0.1s;
+                }
+            }
+        }
+        
+        .modal_input_ri{
+            width: 130px;
+            margin-right: 6px;
+        }
+        
+        .editor-modal-materlist{
+            ._marter_list{
+                height:318px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                // border-top:1px solid #ddd;
+                // border-bottom:1px solid #ddd;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                margin-left:-6px;
+                overflow-y: auto;
+                ._mater_list_box{
+                    width: 384px;
+                    border:1px solid #ddd;
+                    height: 146px;
+                    margin: 0 12px 18px 12px;
+                    border-radius: 4px;
+                    position: relative;
+                    padding: 14px;
+                    color: #000;
+                    
+                    ._mater-img{
+                        text-align: center;
+                        width: 160px;
+                        height: 120px;
+                        overflow: hidden;
+                        display: inline-block;
+                        position: relative;
+                        img{height: 100%;}
+                    }
+                    
+                    ._mater-img-replay{
+                        background: rgba($color: #000000, $alpha:0.1);
+                        position: absolute;
+                        left: 50%;
+                        height: 100%;
+                        font-size: 38px !important;
+                        margin-left:-20px !important; 
+                        color: #666;
+                        &::before{
+                            margin-top: 84%;
+                            display: block;
+                            opacity: 0.5;
+                        }
+                    }
+
+                    ._mater_content{
+                        margin-left: 10px;
+                        vertical-align: top;
+                        line-height: 24px;
+                        width: 180px;
+                        height: 100%;
+                        display: inline-block;
+                    }
+
+                }
+
+                .is_active_mater_box{
+                    border-color: #ff7c4c;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background: url("/static/img/content_icons.png") no-repeat 0px -94px;
+                        position: absolute;
+                        right: -4px;
+                        bottom: -2px;
+                    }
+                }
+            }
+            ._kon{
+                text-align: center;
+                color: #999;
+                margin: 0 auto;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #777;
+            border-radius: 4px;
+        }
+    }
+
+
+// 字体面板
+.pro_text_mini{
+    font-size: 12px;
+    .pro_text_mini_align{
+        width: 50%;
+        margin:4px 0;
+        display: inline-block;;
+        >span{
+            display: inline-block;
+            width:40px;
+            margin-left: 4px;
+        }
+        .pro_min_text{
+            display: inline-block;
+            vertical-align: top;
+            width: 42px;
+        }
+        .pro_min_align{
+            display: inline-block;
+            >i{
+                margin-right:10px;
+                cursor: pointer;
+            }
+        }    
+    }
+ 
+    .pro_text_mini_picker{
+        height: auto;
+         .el-color-picker__trigger{
+            width: 70px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.reVcolor{
+    color: #ff7c4c !important;
+}
+
+
+.resize10{
+    font-size: 10px;
+}
+
+.el-message--info{
+    z-index:10002 !important;
+}
+
+// 预览弹出框 样式
+.dialogpreview{
+    .el-dialog__title{
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .el-dialog__body{
+        padding:12px 20px;
+    }
+} 
+
+// 添加时钟 弹窗 样式
+.center-clock{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    .ivu-modal{
+        top: 0;
+        width: 654px !important;
+        .ivu-select-dropdown{
+            z-index: 20001;
+        }
+    }
+    
+}
+
+// 添加天气 弹窗 样式
+.center-weather{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    .ivu-modal{
+        top: 0;
+        width: 654px !important;
+    }
+}
+
+// 设置文本 弹框样式
+.center-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    .ivu-modal{
+        top: 0;
+        width: 754px !important;
+    }
+}
+
+    // 默认 时钟样式
+    .default_clock{
+        background: #ff7c4c;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    // default_wearther
+
+    .ivu-select-dropdown-transfer{
+        z-index: 20006 !important;
+    }
